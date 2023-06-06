@@ -1,0 +1,17 @@
+body {
+    margin: auto;
+    display:flex; flex-direction:column; justify-content:center;
+  min-height:100vh;
+    background-color: #747573;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.form-control {
+    width: 100% !important;
+}
+
+/* .button {
+    position: relative;
+    float: right;
+} */

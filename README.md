@@ -39,7 +39,7 @@ nodemon server.js
 
 ## Features
 ### Home Page
-![alt homePage]('./img/ui.jpg')
+![alt homePage](./img/ui.jpg)
 
 Owners can select the rental month & year, and then enter the contact number of the tenant. 
 
@@ -47,7 +47,7 @@ Then, owners can enter the default payment details or add new payment detail by 
 
 After all the details are entered, click the **Send Payment** button to send the billing details to the tenant.
 
-![alt sampleMessage]('./img/sampleMessage.jpg')
+![alt sampleMessage](./img/sampleMessage.jpg)
 
 ## Author
 

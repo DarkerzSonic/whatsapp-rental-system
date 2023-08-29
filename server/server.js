@@ -9,7 +9,12 @@ const app = express();
 const client = new Client();
 
 // WhatsApp Web Login with QR Code
-client.on('qr', qr => {
+// client.on('qr', qr => {
+//     qrcode.generate(qr, {small: true});
+// });
+
+client.on('qr', (qr) => {
+    // Generate and scan this code with your phone
     qrcode.generate(qr, {small: true});
 });
 
@@ -30,6 +35,11 @@ app.use(bodyParser.json());
 app.listen(process.env.PORT || 8000, ()=>{
     console.log('Listening on port 8000...');
 })
+
+app.get("/", (req, res)=>{
+    res.send("Server is up!");
+    console.log("Server up!");
+});
 
 app.post("/", (req, res)=>{
 

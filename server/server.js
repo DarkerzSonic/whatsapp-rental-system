@@ -6,7 +6,16 @@ import qrcode from 'qrcode-terminal';
 import { Client } from 'whatsapp-web.js';
 
 const app = express();
-const client = new Client();
+const client = new Client(
+    {
+        //authStrategy: new LocalAuth(),
+        puppeteer: {
+            headless: true,
+            args: [ '--no-sandbox', '--disable-gpu', ],
+        },
+        webVersionCache: { type: 'remote', remotePath: 'https://raw.githubusercontent.com/wppconnect-team/wa-version/main/html/2.2412.54.html', }
+    }
+);
 
 // WhatsApp Web Login with QR Code
 // client.on('qr', qr => {
